@@ -567,7 +567,7 @@ if file is not None:
                             exist = conn.read(worksheet ='MPIGI', usecols = list(range(25)), ttl=5)
                             existing = exist.dropna(how='all')
                             updated = pd.concat([existing, data], ignore_index =True)
-                            conn.update(worksheet = 'TXML', data = updated)
+                            conn.update(worksheet = 'MPIGI', data = updated)
                             st.success('Your data above has been submitted')
                         except:
                             st.write("Couldn't submit, poor network")
