@@ -11,7 +11,7 @@ import plotly.graph_objects as go
 conn = st.connection('gsheets', type=GSheetsConnection)
 st.success('**DEVELOPED BY Dr. LUMINSA DESIRE**')
 
-df = conn.read(worksheet='MPIGI', usecols=list(range(30)), ttl=5)
+df = conn.read(worksheet='MPIGI', usecols=list(range(25)), ttl=5)
 #df = df.dropna(how='all')
 #st.write(df.columns)
 
