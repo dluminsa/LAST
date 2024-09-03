@@ -1,0 +1,10 @@
+openpyxl
+plotly
+google-auth
+oauth2client
+st-gsheets-connection
+git+https://github.com/streamlit/gsheets-connection
+streamlit
+pandas==1.5.3
+numpy==1.24.1
+
